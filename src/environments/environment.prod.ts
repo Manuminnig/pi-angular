@@ -3,7 +3,7 @@ export const environment = {
 };
 
 // @ts-ignore
-export const BASE_URL = (typeof window === 'undefined') ? "" : window['env']['apiUrl'];
+export const BASE_URL = (typeof window['env'] === 'undefined') ? "" : window['env']['apiUrl'];
 
 /* -- ERRORS -- */
 export const SAVE_ERROR: String =
